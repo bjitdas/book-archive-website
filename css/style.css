@@ -1,0 +1,8 @@
+body{
+    background-color: aquamarine;
+}
+.card-body{
+    background-color: chocolate;
+    border: 1px solid gold;
+    color: white;
+}

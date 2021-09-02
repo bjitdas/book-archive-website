@@ -26,10 +26,12 @@ const displaySearchResult = (books) => {
    const p = document.createElement('p');
    console.log(books.length)
     if(books.length === 0){
-        p.innerText = `No result found.` 
+        p.innerText = `No result found. Please write valid keywords.`;
+        p.style.color = 'red'; 
     }
     else{
-        p.innerText = `${books.length} results found.`
+        p.innerText = `${books.length} results found.`;
+        p.style.color = 'yellow';
     }
         resultQuantity.appendChild(p);
 
@@ -42,8 +44,6 @@ const displaySearchResult = (books) => {
         const imgUrl = `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`;
         const div = document.createElement('div');
         div.classList.add('col');
-        
-   
 
         div.innerHTML = `
             <div class="card">
